@@ -12,7 +12,6 @@ comments: true
 
 # MAC OSX 에서 Oracle DB 설치하기
 
-#blog/post #oracle #MacOSX #docker 
 기존 Windows 환경에서도 mysql 만 사용해 봤어서, Java 공부를 하는 김에 Oracle DB를 사용해 봐야겠다고 결심했다.
 
 그런데 Mac 에서는 Docker를 사용해야 Oracle DB 를 사용할 수 있다는 사실을 알게 되었다. 구글링의 결과, Docker를 사용해 DB 를 설치하는 것은 간다해 보였는데… 
