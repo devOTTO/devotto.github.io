@@ -1,16 +1,10 @@
 ---
+layout: post
 title: MAC OSX 에서 Oracle DB 설치하기
-tags:
-- oracle
-- MacOSX
-- docker
-- DB
-- study
-- java
+excerpt: "MAC OSX 에서 Oracle DB 설치하기 첫번째 포스트"
+tags: [oracle,MacOSX, docker, DB ,study ,java]
 comments: true
 ---
-
-# MAC OSX 에서 Oracle DB 설치하기
 
 기존 Windows 환경에서도 mysql 만 사용해 봤어서, Java 공부를 하는 김에 Oracle DB를 사용해 봐야겠다고 결심했다.
 
@@ -108,6 +102,8 @@ NET I/O : 네트워크 I/O<br>
 
 `docker images` : 도커 이미지 리스트 출력
 
+<br>
+* 오탈자나 잘못된 부분 지적 감사히 수정하겠습니다 😆
 
 **참고링크**
 > [맥(Mac)에서 오라클 11g 설치 - 도커 환경 구축하기](https://lhoris.tistory.com/18)<br>
