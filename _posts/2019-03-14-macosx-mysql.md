@@ -17,8 +17,7 @@ Docker를 사용해야 하는 Oracle 과 달리 MySQL 은 Homebrew 를 통해서
 
 `brew install mysql` 를 사용해 mysql 을 install 한다.
 
-*원하는 다른 버전이 있다면 `mysql@5.5`와 같이 입력해 주면 된다.*
-{: .notice}
+> *원하는 다른 버전이 있다면 `mysql@5.5`와 같이 입력해 주면 된다.*
 
 `brew list` 로 설치 완료 된 것을 확인 한다.
 
