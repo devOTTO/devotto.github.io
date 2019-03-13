@@ -2,7 +2,7 @@
 layout: post
 title: MAC OSX 에서 Oracle DB 설치하기
 excerpt: "MAC OSX 에서 Oracle DB 설치하기 첫번째 포스트"
-tags: [oracle,MacOSX, docker, DB ,study ,java]
+tags: [oracle,MacOSX, docker, DB ,study ,java, jdbc]
 comments: true
 ---
 
