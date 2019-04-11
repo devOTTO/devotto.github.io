@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Motivation, IOS, Java, HTML/CSS, JavaScript, C++
-percentage: 100, 20, 60, 60, 60, 55
+aspects: Motivation, Algorithm, Java, HTML/CSS, JavaScript, C++
+percentage: 100, 30, 50, 60, 60, 55
