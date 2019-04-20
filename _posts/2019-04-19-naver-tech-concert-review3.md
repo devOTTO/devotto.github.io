@@ -10,7 +10,7 @@ comments: true
 #### 한장현님 - kakaobank
 ---
 
-> [1.웹 개발 트렌드]( [NAVER TECH CONCERT : FRONT END - 1. 웹 개발 트렌드](bear://x-callback-url/open-note?id=F28099EB-3CE1-446A-B280-7EDD9D091D30-782-000003DF3358AFB0&header=1.%20%EC%9B%B9%20%EA%B0%9C%EB%B0%9C%20%ED%8A%B8%EB%A0%8C%EB%93%9C) )<br>
+> 1.웹 개발 트렌드<br>
 > 2.최근 웹 개발 방식<br>
 > 3.공부하면 좋은 것<br>
 
