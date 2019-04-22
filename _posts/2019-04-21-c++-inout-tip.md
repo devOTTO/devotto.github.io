@@ -2,7 +2,7 @@
 layout: post
 title: C++ 입출력 팁 - 1
 excerpt: "PS시 C++ 입출력"
-tags: [chat, seminar, review, FE]
+tags: [c++, algorithm, tips]
 comments: true
 ---
 ## INTRO
