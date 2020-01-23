@@ -27,7 +27,9 @@ git push
 ```
 
 `git rm —-cached`  
-옵션을 주면 원격 저장소에 저장된 파일만 삭제 되고 로컬 저장소에 저장된 파일은 삭제 되지 않는다.<br>
+~~옵션을 주면 원격 저장소에 저장된 파일만 삭제 되고 로컬 저장소에 저장된 파일은 삭제 되지 않는다.~~<br>
+Git Staging Area에서 제거가 되고 Working Directory는 남겨둔다. 
+[참고](https://git-scm.com/docs/git-rm)<br>
 그리고 파일들을 다시 추가하고 푸시하면 된다~
 
 
