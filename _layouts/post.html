@@ -61,7 +61,10 @@ layout: default
   </ul>
 </div><!-- end share-buttons -->
 
-{% if site.owner.disqus-shortname and page.comments == true %}
-<div id="disqus_thread"></div>
-{% include disqus.html %}
-{% endif %}
+<script src="https://utteranc.es/client.js"
+        repo="devOTTO/devotto.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
