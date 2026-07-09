@@ -1,54 +1,27 @@
-### Jekyll ###
-_site
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+/build
 
 
-### Gulp ###
-package.json
-/node_modules/
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-### Compiled Source ###
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-### Compressed Packages ###
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-
-### Logs and Databases ###
-*.log
-*.sql
-*.sqlite
-
-
-### MacOS ###
-*.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+#user generated content
+public/profile.json
+public/blogs.json
