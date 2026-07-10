@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 1500 // Set animation duration as per your animation
 };
@@ -16,7 +16,7 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
@@ -25,7 +25,7 @@ const greeting = {
   subTitle: emoji(
     "DevOps / Site Reliability Engineer 🚀 with 5 years operating Kubernetes at cloud-provider scale (NHN Cloud), now at Carnegie Mellon University building CI/CD platforms and ML experimentation infrastructure."
   ),
-  resumeLink: "Yoonmee_Hwang_Resume.pdf", // served from public/ — replace with latest PDF before deploy
+  resumeLink: "Yoonmee_Hwang_Resume.pdf", // served from public/ - replace with latest PDF before deploy
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -45,10 +45,10 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "DEVOPS / SRE ENGINEER WHO KEEPS PRODUCTION BORING — AND PIPELINES FAST",
+    "DEVOPS / SRE ENGINEER WHO KEEPS PRODUCTION BORING AND PIPELINES FAST",
   skills: [
     emoji(
-      "⚡ Build and operate Kubernetes platforms at scale — 16 clusters, 130+ nodes, 2,300+ pods in production"
+      "⚡ Build and operate Kubernetes platforms at scale - 16 clusters, 130+ nodes, 2,300+ pods in production"
     ),
     emoji(
       "⚡ Design end-to-end CI/CD platforms (GitHub Actions, ArgoCD) with gated deploys, ephemeral environments, and OIDC-based auth"
@@ -57,7 +57,7 @@ const skillsSection = {
       "⚡ Run observability stacks (Prometheus, Grafana, Loki, Jaeger) and tune them with benchmark-driven decisions"
     ),
     emoji(
-      "⚡ Build reproducible ML experimentation infrastructure — PyTorch, Slurm/HPC, Weights & Biases"
+      "⚡ Build reproducible ML experimentation infrastructure - PyTorch, Slurm/HPC, Weights & Biases"
     )
   ],
 
@@ -98,10 +98,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-git-alt"
     },
     {
-      skillName: "Golang",
-      fontAwesomeClassname: "fas fa-code"
-    },
-    {
       skillName: "Monitoring",
       fontAwesomeClassname: "fas fa-chart-line"
     },
@@ -124,7 +120,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Carnegie Mellon University",
-      logo: "https://commons.wikimedia.org/wiki/Special:FilePath/Carnegie_Mellon_University_wordmark.svg",
+      logo: require("./assets/images/cmuLogo.png"),
       subHeader: "Master of Software Engineering, School of Computer Science",
       duration: "August 2025 - December 2026 (expected)",
       desc: "GPA 3.9/4.0",
@@ -134,7 +130,7 @@ const educationInfo = {
     },
     {
       schoolName: "Kyung Hee University",
-      logo: "https://commons.wikimedia.org/wiki/Special:FilePath/Kyung_Hee_University_Logo.svg",
+      logo: require("./assets/images/khuLogo.png"),
       subHeader: "Bachelor of Engineering in Computer Engineering",
       duration: "March 2015 - August 2020",
       desc: "GPA 3.73/4.3",
@@ -172,30 +168,36 @@ const workExperiences = {
     {
       role: "DevOps Engineer / Site Reliability Engineer",
       company: "NHN Cloud",
-      companylogo: "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_NHN_Corporation_(2024).svg",
-      date: "July 2020 – July 2025",
-      desc: "Top-3 cloud service provider in South Korea. Built and operated the company-wide DevOps platform for NHN Cloud PaaS products.",
+      companylogo: require("./assets/images/nhncloudLogo.png"),
+      date: "July 2020 - July 2025",
+      desc: "Company-wide DevOps platform for NHN Cloud PaaS, a top-3 cloud provider in South Korea.",
       descBullets: [
-        "Built and operated 16 Kubernetes clusters (130+ nodes, 2,300+ pods) and CI/CD pipelines serving 30+ teams with ArgoCD, Jenkins, Keycloak, and Harbor",
-        "Cut deployment task time by 83% by redesigning ArgoCD with the App of Apps pattern and ApplicationSet",
-        "Migrated 10 legacy products to Kubernetes across 6 regions with zero production incidents",
-        "Raised Loki log throughput 52% and cut write failures 74% via k6 benchmark-driven tuning",
-        "Led a certificate-automation PoC with DigiCert HQ, cutting costs 20% — 2023 Employee of the Year"
+        "Built and operated 16 Kubernetes clusters (130+ nodes, 2,300+ pods) and CI/CD pipelines serving 30+ teams",
+        "Cut deployment task time by 83% and migrated 10 legacy products across 6 regions with zero incidents",
+        "Raised Loki log throughput 52% via k6 benchmark-driven tuning; 2023 Employee of the Year"
       ]
     },
     {
       role: "Cloud Engineering Intern",
       company: "NHN",
-      companylogo: "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_NHN_Corporation_(2024).svg",
-      date: "January 2020 – June 2020",
-      desc: "Designed HA infrastructure for web services on the TOAST Cloud platform — Apache Tomcat clustering, MySQL replication, CI/CD, and monitoring."
+      companylogo: require("./assets/images/nhnLogo.png"),
+      date: "January 2020 - June 2020",
+      desc: "HA infrastructure design for web services on the TOAST Cloud platform.",
+      descBullets: [
+        "Implemented Apache Tomcat clustering and MySQL replication",
+        "Set up CI/CD pipelines and service monitoring"
+      ]
     },
     {
       role: "Software Engineering Intern",
       company: "Naver",
-      companylogo: "https://commons.wikimedia.org/wiki/Special:FilePath/Naver_logo_initial.svg",
-      date: "July 2019 – August 2019",
-      desc: "Refactored Naver Shopping Admin pages from legacy JSP to React, Node.js, GraphQL, and TypeScript with Apollo Client caching."
+      companylogo: require("./assets/images/naverLogo.png"),
+      date: "July 2019 - August 2019",
+      desc: "Modernized Naver Shopping Admin pages, the internal tool for Korea's largest e-commerce search platform.",
+      descBullets: [
+        "Refactored legacy JSP pages to React, Node.js, GraphQL, and TypeScript",
+        "Improved page performance with Apollo Client caching"
+      ]
     }
   ]
 };
@@ -216,9 +218,9 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/troutwoodLogo.png"),
-      projectName: "Financial Integration Service — Troutwood",
+      projectName: "Financial Integration Service - Troutwood",
       projectDesc:
-        "Serverless payroll-data ingestion platform on AWS (Lambda, SQS, DynamoDB, CDK). Designed the end-to-end CI/CD platform on GitHub Actions — 14 of 17 workflows, 6 solo: gated deploys, cdk diff previews, per-branch ephemeral stacks, GitHub OIDC auth, LocalStack integration-test CI, and gitleaks secret scanning.",
+        "Serverless payroll-data ingestion platform on AWS (Lambda, SQS, DynamoDB, CDK). Built the end-to-end CI/CD platform on GitHub Actions: 14 of 17 workflows, gated deploys, per-branch ephemeral stacks, OIDC auth, and LocalStack integration tests.",
       footerLink: [
         {
           name: "Troutwood",
@@ -230,13 +232,13 @@ const bigProjects = {
       image: require("./assets/images/movierecLogo.png"),
       projectName: "Movie Recommender System in Production",
       projectDesc:
-        "CMU ML in Production (17-645), 5-person team — Infrastructure & MLOps lead. Operated a recommender for a simulated 1M-user streaming service on k3s: Helm-deployed FastAPI inference + 4 ML CronJobs, GitHub Actions CI/CD (92% of pipeline commits), full Prometheus/Grafana/Loki observability with 5 dashboards, and co-built A/B testing infrastructure. Cut timeout rate ~15-20% to 3.3% and cold-start ~2s to <100ms (dev-measured)."
+        "Infrastructure and MLOps lead in a 5-person CMU team (17-645). Ran a movie recommender for a simulated 1M-user service on k3s with Helm, GitHub Actions CI/CD, and Prometheus, Grafana, and Loki monitoring. Cut timeout rate to 3.3% and cold-start latency to under 100ms (dev-measured)."
     },
     {
       image: require("./assets/images/mlplatformLogo.png"),
       projectName: "ML Experimentation Platform for Time-Series Anomaly Detection",
       projectDesc:
-        "Independent Study. Versioned, reproducible experiment framework (PyTorch + Slurm + Weights & Biases) evaluating 5 model architectures across 200+ multivariate time-series datasets — fail-fast screening cut a 17 GPU-hour benchmark to 1.3 GPU-hours; 600+ tracked runs with offline-to-online sync for air-gapped HPC nodes."
+        "Independent study. Reproducible PyTorch experiment framework evaluating 5 model architectures across 200+ time-series datasets on a Slurm HPC cluster. Fail-fast screening cut a 17 GPU-hour benchmark to 1.3 GPU-hours, with 600+ runs tracked in Weights & Biases."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -259,7 +261,7 @@ const achievementSection = {
     },
     {
       title: "Certified Kubernetes Administrator (CKA)",
-      subtitle: "The Linux Foundation / CNCF — held 2022-2025",
+      subtitle: "The Linux Foundation / CNCF, held 2022-2025",
       image: require("./assets/images/ckaBadge.png"),
       imageAlt: "CKA badge",
       footerLink: []
@@ -267,7 +269,7 @@ const achievementSection = {
     {
       title: "Employee of the Year",
       subtitle:
-        "NHN Cloud Great Performance Awards 2023 — for the DigiCert certificate-automation PoC",
+        "NHN Cloud Great Performance Awards 2023, for the DigiCert certificate-automation PoC",
       image: require("./assets/images/awardBadge.png"),
       imageAlt: "Award badge",
       footerLink: []
@@ -314,7 +316,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Looking for DevOps / Cloud / MLOps opportunities — my inbox is open.",
+    "Looking for DevOps / Cloud / MLOps opportunities. My inbox is always open.",
   email_address: "yoonmhwang@gmail.com"
 };
 
