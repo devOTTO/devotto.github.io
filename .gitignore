@@ -1,54 +1,69 @@
-### Jekyll ###
-_site
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
+# ============================================================================
+# Hugo Site .gitignore
+# ============================================================================
 
+# ============================================================================
+# Hugo Build Artifacts
+# ============================================================================
 
-### Gulp ###
-package.json
-/node_modules/
+# Generated site output
+public/
 
-### Compiled Source ###
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# Hugo resources (processed assets)
+resources/
 
-### Compressed Packages ###
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# Hugo build lock
+.hugo_build.lock
 
+# Hugo stats
+hugo_stats.json
 
-### Logs and Databases ###
-*.log
-*.sql
-*.sqlite
+# Auto-generated JS config
+**/assets/jsconfig.json
 
+# ============================================================================
+# Node.js & Package Managers
+# ============================================================================
 
-### MacOS ###
-*.DS_Store
-.AppleDouble
-.LSOverride
-Icon
+# Dependencies
+node_modules/
+
+# ============================================================================
+# Environment & Configuration
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# ============================================================================
+# Generated Content
+# ============================================================================
+
+# Pagefind search index
+pagefind/
+static/pagefind/
+
+# ============================================================================
+# Operating System
+# ============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
 ._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ============================================================================
+# Logs & Temporary Files
+# ============================================================================
+
+*.log
+npm-debug.log*

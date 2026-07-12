@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: http://devotto.github.io/sitemap.xml

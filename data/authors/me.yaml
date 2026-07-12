@@ -1,0 +1,138 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Yoonmee Hwang
+  given: Yoonmee
+  family: Hwang
+  pronouns: she/her
+status:
+  icon: ''
+role: DevOps / MLOps Engineer
+bio: |
+  DevOps and Site Reliability Engineer with 5 years operating Kubernetes at
+  cloud-provider scale at NHN Cloud, a top-3 cloud service provider in South Korea.
+  Currently a Master of Software Engineering student at Carnegie Mellon University,
+  building CI/CD platforms and ML experimentation infrastructure.
+
+affiliations:
+  - name: Carnegie Mellon University
+    url: https://www.cmu.edu/
+
+links:
+  - icon: at-symbol
+    url: mailto:yoonmhwang@gmail.com
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/devotto
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/yoonmee-hwang/
+
+interests:
+  - Kubernetes & Cloud Infrastructure
+  - CI/CD & Platform Engineering
+  - ML Infrastructure & Experimentation
+  - Observability
+
+education:
+  - degree: Master of Software Engineering, School of Computer Science
+    institution: Carnegie Mellon University
+    start: 2025-08-01
+    end: 2026-12-31
+    summary: |
+      GPA 3.9/4.0. Coursework: Machine Learning in Production, Introduction to Deep Learning,
+      Introduction to Machine Learning, Introduction to Computer Systems.
+  - degree: Bachelor of Engineering in Computer Engineering
+    institution: Kyung Hee University
+    start: 2015-03-01
+    end: 2020-08-31
+    summary: GPA 3.73/4.3. Merit-based scholarship, three semesters.
+
+experience:
+  - role: DevOps Engineer / Site Reliability Engineer
+    org: NHN Cloud
+    start: 2020-07-01
+    end: 2025-07-31
+    summary: |
+      Company-wide DevOps platform for NHN Cloud PaaS, a top-3 cloud provider in South Korea.
+
+      - Built and operated 16 Kubernetes clusters (130+ nodes, 2,300+ pods) and CI/CD pipelines serving 30+ teams with ArgoCD, Jenkins, Keycloak, and Harbor
+      - Cut deployment task time by 83% by redesigning ArgoCD with the App of Apps pattern
+      - Migrated 10 legacy products to Kubernetes across 6 regions with zero production incidents
+      - Raised Loki log throughput 52% and cut write failures 74% via k6 benchmark-driven tuning
+      - Led a certificate-automation PoC with DigiCert HQ, cutting costs 20% (2023 Employee of the Year)
+  - role: Cloud Engineering Intern
+    org: NHN
+    start: 2020-01-01
+    end: 2020-06-30
+    summary: |
+      - Designed HA infrastructure for web services on the TOAST Cloud platform
+      - Implemented Apache Tomcat clustering, MySQL replication, CI/CD, and monitoring
+  - role: Software Engineering Intern
+    org: Naver
+    start: 2019-07-01
+    end: 2019-08-31
+    summary: |
+      - Refactored Naver Shopping Admin pages from legacy JSP to React, Node.js, GraphQL, and TypeScript
+      - Improved page performance with Apollo Client caching
+
+skills:
+  - name: Cloud & Infrastructure
+    items:
+      - label: Kubernetes
+        level: 5
+      - label: Docker
+        level: 5
+      - label: AWS (Lambda, SQS, DynamoDB, CDK)
+        level: 4
+      - label: Helm
+        level: 5
+      - label: Ansible
+        level: 4
+  - name: CI/CD & Languages
+    items:
+      - label: GitHub Actions
+        level: 5
+      - label: ArgoCD
+        level: 5
+      - label: Jenkins
+        level: 4
+      - label: Python
+        level: 4
+      - label: Shell / Bash
+        level: 5
+  - name: Observability & ML
+    items:
+      - label: Prometheus / Grafana
+        level: 5
+      - label: Loki / Jaeger
+        level: 5
+      - label: PyTorch
+        level: 3
+      - label: Weights & Biases
+        level: 4
+      - label: Slurm / HPC
+        level: 3
+
+languages:
+  - name: Korean
+    level: 5
+    label: Native
+  - name: English
+    level: 4
+    label: Professional
+
+awards:
+  - title: Certified Kubernetes Application Developer (CKAD)
+    awarder: The Linux Foundation / CNCF
+    date: "2023-12-01"
+    icon: hero/check-badge
+  - title: Certified Kubernetes Administrator (CKA)
+    awarder: The Linux Foundation / CNCF (held 2022-2025)
+    date: "2022-01-01"
+    icon: hero/check-badge
+  - title: Employee of the Year, Great Performance Awards
+    awarder: NHN Cloud
+    date: "2023-06-01"
+    summary: For leading the DigiCert certificate-automation PoC that cut certificate costs 20%.
+    icon: hero/trophy
