@@ -65,7 +65,7 @@ experience:
     summary: |
       Company-wide DevOps platform for NHN Cloud PaaS, a top-3 cloud provider in South Korea.
 
-      - Built and operated 16 Kubernetes clusters (130+ nodes, 4,000+ pods) and CI/CD pipelines serving 30+ teams with ArgoCD, Jenkins, Keycloak, and Harbor
+      - Built and operated 16 Kubernetes clusters (130+ nodes, 4,000+ pods) across public, air-gapped government, and DR environments, with CI/CD pipelines serving 30+ internal PaaS teams using ArgoCD, Jenkins, Keycloak, and Harbor
       - Reduced deployment time by over 83% by redesigning GitOps delivery with ArgoCD's App of Apps pattern and ApplicationSet
       - Migrated 10 legacy products to Kubernetes across 6 regions with zero production incidents, leading containerization, Helm chart standardization, and automated certificate management
       - Owned production operations for the 10 migrated products and 39 company-wide API gateway servers on CentOS Linux, leading deployments, upgrades, and 24/7 on-call incident response
