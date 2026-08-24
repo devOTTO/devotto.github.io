@@ -21,8 +21,9 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: "DevOps / Cloud / SRE / MLOps Engineer"
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
+    description: "DevOps and Site Reliability Engineer with 5 years running Kubernetes
+      at cloud-provider scale at NHN Cloud. Carnegie Mellon MSE student building CI/CD
+      platforms and ML experimentation infrastructure."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "" # Twitter/X handle for Twitter Cards (without @)

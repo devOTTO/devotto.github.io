@@ -37,13 +37,19 @@ interests:
 education:
   - degree: Master of Software Engineering, School of Computer Science
     institution: Carnegie Mellon University
+    button:
+      url: https://www.cmu.edu/
+      text: cmu.edu
     start: 2025-08-01
     end: 2026-12-31
     summary: |
-      GPA 3.9/4.0. Coursework: Machine Learning in Production, Introduction to Deep Learning,
-      Introduction to Machine Learning, Introduction to Computer Systems.
+      GPA 3.95/4.0. Coursework: Computer Systems, Software Architectures, Distributed Systems,
+      Machine Learning in Production, Machine Learning, Deep Learning.
   - degree: Bachelor of Engineering in Computer Engineering
     institution: Kyung Hee University
+    button:
+      url: https://www.khu.ac.kr/
+      text: khu.ac.kr
     start: 2015-03-01
     end: 2020-08-31
     summary: GPA 3.73/4.3. Merit-based scholarship, three semesters.
@@ -53,28 +59,60 @@ experience:
     org: NHN Cloud
     start: 2020-07-01
     end: 2025-07-31
+    button:
+      url: https://www.nhncloud.com/
+      text: nhncloud.com
     summary: |
       Company-wide DevOps platform for NHN Cloud PaaS, a top-3 cloud provider in South Korea.
 
-      - Built and operated 16 Kubernetes clusters (130+ nodes, 2,300+ pods) and CI/CD pipelines serving 30+ teams with ArgoCD, Jenkins, Keycloak, and Harbor
-      - Cut deployment task time by 83% by redesigning ArgoCD with the App of Apps pattern
-      - Migrated 10 legacy products to Kubernetes across 6 regions with zero production incidents
-      - Raised Loki log throughput 52% and cut write failures 74% via k6 benchmark-driven tuning
-      - Led a certificate-automation PoC with DigiCert HQ, cutting costs 20% (2023 Employee of the Year)
+      - Built and operated 16 Kubernetes clusters (130+ nodes, 4,000+ pods) and CI/CD pipelines serving 30+ teams with ArgoCD, Jenkins, Keycloak, and Harbor
+      - Reduced deployment time by over 83% by redesigning GitOps delivery with ArgoCD's App of Apps pattern and ApplicationSet
+      - Migrated 10 legacy products to Kubernetes across 6 regions with zero production incidents, leading containerization, Helm chart standardization, and automated certificate management
+      - Owned production operations for the 10 migrated products and 39 company-wide API gateway servers on CentOS Linux, leading deployments, upgrades, and 24/7 on-call incident response
+      - Raised Loki log ingestion throughput 52% and cut write failures 74% by benchmarking with k6 load tests and tuning chunk encoding and ingestion rate limits
+      - Standardized cross-region disaster recovery with GSLB-based failover and auto-scaling, and cut maintenance toil by automating node operations with Ansible playbooks
+      - Automated disk-pressure cleanup across 10 cluster environments with threshold-based shell scripts rolled out via Ansible, eliminating recurring manual intervention
+      - Led a certificate-automation PoC with DigiCert's US headquarters, cutting costs 20% (2023 Employee of the Year)
+      - Established platform governance for 30+ teams, defining deployment permission and resource tagging policies and authoring company-wide standard Helm chart templates, including csi-s3 storage integration charts
+      - Validated OpenTelemetry adoption through hands-on testing and authored internal adoption guides
+      - Improved ArgoCD notifications with granular sync/deploy/status alerts and de-duplication, reducing alert noise for on-call engineers
+      - Built proactive Kubernetes cluster health checks verifying connectivity from AWS, DR, and internal networks
+      - Upgraded the company-wide API gateway fleet ahead of CentOS 6 end-of-life, including Apache upgrades
+      - Configured graceful-shutdown behavior for Kubernetes workloads during the legacy migration
+      - Served as main SPOC for key enterprise customers and standardized support response templates with the NHN Enterprise team
+      - Authored partner training materials and hands-on labs for NHN Cloud products (Notification, Deploy, Log & Crash, CDN, Image) and the Kubernetes onboarding guide (CI/CD, Helm, logging, monitoring)
   - role: Cloud Engineering Intern
     org: NHN
     start: 2020-01-01
     end: 2020-06-30
+    button:
+      url: https://www.nhn.com/
+      text: nhn.com
     summary: |
-      - Designed HA infrastructure for web services on the TOAST Cloud platform
-      - Implemented Apache Tomcat clustering, MySQL replication, CI/CD, and monitoring
+      - Designed HA infrastructure on TOAST Cloud, removing single points of failure via Tomcat clustering and MySQL replication
+      - Configured CI/CD pipelines and service monitoring, and authored user guides supporting customer adoption of the Notification PaaS API
   - role: Software Engineering Intern
     org: Naver
     start: 2019-07-01
     end: 2019-08-31
+    button:
+      url: https://www.navercorp.com/
+      text: navercorp.com
     summary: |
-      - Refactored Naver Shopping Admin pages from legacy JSP to React, Node.js, GraphQL, and TypeScript
-      - Improved page performance with Apollo Client caching
+      - Refactored Naver Shopping Admin pages from a legacy JSP stack to React, Node.js, GraphQL, and TypeScript
+      - Improved page load performance with Apollo Client caching, and maintainability by restructuring shared UI into reusable React components
+  - role: Mobile Quality Assurance Student Intern
+    org: Nexon Networks Corp
+    start: 2018-07-01
+    end: 2018-08-31
+    button:
+      url: https://www.nexon-networks.com/
+      text: nexon-networks.com
+    summary: |
+      Quality assurance arm of Nexon, one of the largest game companies in South Korea.
+
+      - Contributed to the launch of the new character Phantom by executing game QA for MapleStory Mobile, a title with over 740,000 monthly active users
+      - Supported the QA team by performing structured test cases and filing over 100 bug reports, and by suggesting gameplay improvements
 
 skills:
   - name: Cloud & Infrastructure
@@ -83,7 +121,7 @@ skills:
         level: 5
       - label: Docker
         level: 5
-      - label: AWS (Lambda, SQS, DynamoDB, CDK)
+      - label: AWS (EC2, S3, Lambda, CDK, CloudFormation)
         level: 4
       - label: Helm
         level: 5
@@ -101,6 +139,10 @@ skills:
         level: 4
       - label: Shell / Bash
         level: 5
+      - label: C++
+        level: 3
+      - label: JavaScript
+        level: 3
   - name: Observability & ML
     items:
       - label: Prometheus / Grafana
