@@ -67,3 +67,14 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+
+# ============================================================================
+# Local working files (not part of the published site)
+# ============================================================================
+
+# CMU group project working copy (kept here for reference only)
+group-project-s26-emmu-dev/
+
+# Resume sources - only the exported PDFs in static/uploads/ are published
+*.docx
+~$*.docx
