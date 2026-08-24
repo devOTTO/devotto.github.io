@@ -10,9 +10,6 @@ sections:
     content:
       username: me
       text: ''
-      button:
-        text: Download Resume
-        url: uploads/Yoonmee_Hwang_Resume.pdf
       headings:
         about: ''
         education: ''
@@ -26,6 +23,14 @@ sections:
       avatar:
         size: medium
         shape: circle
+  - block: cta-button-list
+    id: resume
+    content:
+      buttons:
+        - text: Download Resume - DevOps / SRE
+          url: uploads/Yoonmee_Hwang_Resume_DevOps.pdf
+        - text: Download Resume - MLOps / ML Infrastructure
+          url: uploads/Yoonmee_Hwang_Resume_MLOps.pdf
   - block: resume-experience
     id: experience
     content:

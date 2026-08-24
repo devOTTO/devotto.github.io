@@ -26,7 +26,9 @@ https://devotto.github.io 에 반영됩니다.
 - 홈 섹션 구성: `content/_index.md`
 - 프로젝트: `content/projects/*/index.md`
 - 프로필 사진: `assets/media/authors/me.jpg` 교체 (지금은 YH 이니셜 placeholder)
-- 이력서 PDF: `static/uploads/Yoonmee_Hwang_Resume.pdf` 교체
+- 이력서 PDF: `static/uploads/Yoonmee_Hwang_Resume_DevOps.pdf` /
+  `static/uploads/Yoonmee_Hwang_Resume_MLOps.pdf` 교체
+  (홈 다운로드 버튼 2개는 `content/_index.md`의 `cta-button-list` 블록에서 관리)
 
 ## 로컬 미리보기 (선택)
 
