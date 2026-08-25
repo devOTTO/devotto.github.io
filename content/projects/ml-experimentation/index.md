@@ -5,6 +5,8 @@ tags:
   - PyTorch
   - Slurm
   - Weights & Biases
+image:
+  preview_only: true
 ---
 
 Independent study at Carnegie Mellon. Integrated 5 auto-CEGAR gating algorithms into the RWML anomaly detection model, porting and training every variant end to end on a self-built PyTorch experimentation platform. Orchestrated 1,300+ tracked runs across 200+ datasets on a Slurm HPC cluster, and cut benchmark cost from 17 to 1.3 GPU-hours by screening out weak configurations early.
