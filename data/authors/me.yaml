@@ -40,19 +40,23 @@ education:
     button:
       url: https://www.cmu.edu/
       text: cmu.edu
+    year: August 2025 ~ December 2026
     start: 2025-08-01
     end: 2026-12-31
     summary: |
-      GPA 3.95/4.0. Coursework: Computer Systems, Software Architectures, Distributed Systems,
-      Machine Learning in Production, Machine Learning, Deep Learning.
+      - GPA 3.95/4.0
+      - Coursework: Computer Systems, Software Architectures, Distributed Systems, Machine Learning in Production, Machine Learning, Deep Learning
   - degree: Bachelor of Engineering in Computer Engineering
     institution: Kyung Hee University
     button:
       url: https://www.khu.ac.kr/
       text: khu.ac.kr
+    year: March 2015 ~ August 2020
     start: 2015-03-01
     end: 2020-08-31
-    summary: GPA 3.73/4.3. Merit-based scholarship, three semesters.
+    summary: |
+      - GPA 3.73/4.3
+      - Merit-based scholarship, three semesters
 
 experience:
   - role: DevOps Engineer / Site Reliability Engineer

@@ -78,3 +78,5 @@ group-project-s26-emmu-dev/
 # Resume sources - only the exported PDFs in static/uploads/ are published
 *.docx
 ~$*.docx
+# Source exports kept in the repo root; published copies live in static/uploads/
+/Yoonmee_Hwang_Resume_*.pdf

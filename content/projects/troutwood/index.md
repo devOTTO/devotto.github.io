@@ -5,6 +5,8 @@ tags:
   - AWS
   - CI/CD
   - GitHub Actions
+image:
+  preview_only: true
 ---
 
 Serverless payroll-data ingestion platform on AWS (Lambda, SQS, DynamoDB, CDK), built as a CMU MSE Studio project for [Troutwood](https://www.troutwood.com/). I built the end-to-end delivery platform for the serverless monorepo: 14 of 17 GitHub Actions CI/CD workflows (6 authored solo), the foundational AWS CDK stacks in Python, and LocalStack-based integration tests that run on every pull request.

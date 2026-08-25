@@ -6,6 +6,8 @@ tags:
   - MLOps
   - Observability
   - Kafka
+image:
+  preview_only: true
 ---
 
 Infrastructure and MLOps lead in a 5-person CMU team (17-645). Operated a movie recommender serving a simulated 1M-user streaming service across dev and prod Kubernetes environments, with Helm charts, a FastAPI inference service, GitHub Actions CI/CD, and Prometheus, Grafana, and Loki monitoring. Cut recommendation timeouts from 15-20% of requests to 3.3%.
